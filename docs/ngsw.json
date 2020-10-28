@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1603906665369,
+  "timestamp": 1603907111511,
   "index": "https://gaut9a8m.github.io/xyz/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://gaut9a8m.github.io/xyz/favicon.ico",
         "https://gaut9a8m.github.io/xyz/index.html",
-        "https://gaut9a8m.github.io/xyz/main.a25b1e2e370f32987d05.js",
+        "https://gaut9a8m.github.io/xyz/main.2570205b00d5efda6739.js",
         "https://gaut9a8m.github.io/xyz/polyfills.35a5ca1855eb057f016a.js",
         "https://gaut9a8m.github.io/xyz/runtime.acf0dec4155e77772545.js",
         "https://gaut9a8m.github.io/xyz/styles.3ff695c00d717f2d2a11.css"
@@ -66,8 +66,8 @@
     "https://gaut9a8m.github.io/xyz/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "https://gaut9a8m.github.io/xyz/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "https://gaut9a8m.github.io/xyz/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://gaut9a8m.github.io/xyz/index.html": "1bae3605ef9092650fa71877fc422e62c429aa5e",
-    "https://gaut9a8m.github.io/xyz/main.a25b1e2e370f32987d05.js": "0ad95191647e960ed630308f483f7ac75a7d0554",
+    "https://gaut9a8m.github.io/xyz/index.html": "da0e37edb0c5e0712867972b1be3e227db980c5a",
+    "https://gaut9a8m.github.io/xyz/main.2570205b00d5efda6739.js": "54262ec0c3f8c09d0eccb9975d5fd3eaf9816315",
     "https://gaut9a8m.github.io/xyz/polyfills.35a5ca1855eb057f016a.js": "578360d24ce37383f261c7ef63b1f822d28e8dde",
     "https://gaut9a8m.github.io/xyz/runtime.acf0dec4155e77772545.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
     "https://gaut9a8m.github.io/xyz/styles.3ff695c00d717f2d2a11.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
