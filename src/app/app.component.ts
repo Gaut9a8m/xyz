@@ -15,8 +15,12 @@ export class AppComponent {
   title = 'vehicle-info';
    
   vnumber='';
-  data_info:any=['data'];
+  data_info:any;
+  make:any;
   promptEvent:any;
+  mssg:boolean=false;
+
+
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type':  'application/json',
@@ -41,10 +45,12 @@ export class AppComponent {
   }
 
   querynumber(){
+    
     if(this.vnumber.length != 0){
       let i = this.vnumber.length-1;
       let reg2='';
       let reg1='';
+      
       for(i;i>4;i--){
         reg2+=this.vnumber[i];
       }
@@ -52,11 +58,19 @@ export class AppComponent {
         reg1+=this.vnumber[j];
       }
 
-      console.log(reg2);
-      console.log(reg1);
       this.data_info = this._http.get('http://18.212.242.209/getVehicleDetails?reg1='+reg1+'&reg2='+reg2,this.httpOptions)
       .subscribe(data=>{
-        console.log(data)
+        this.make=[];
+        if(data['owner_name']){
+          this.mssg =false;
+          this.data_info = data;
+          // console.log(this.data_info)
+        this.make = data['maker___model'].split("/");
+        }
+        else{
+          this.mssg =true;
+        }
+        
       },
       err=>{
         console.log(err)

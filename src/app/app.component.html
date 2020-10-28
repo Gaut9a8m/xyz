@@ -13,18 +13,18 @@
     </div>
   </div>
 
-  <div class="row" *ngIf="data_info">
+  <div class="row" *ngIf="data_info && make && !mssg">
     <div class="card" style="width: 18rem;">
       <div class="card-body">
         <h5 class="card-title">Details</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Name:</h6>
-        <p class="card-text">Insurance Upto</p>
-        <p class="card-text">Fuel Type</p>
-        <p class="card-text">Make</p>
-        <p class="card-text">Model</p>
+        <h6 class="card-subtitle mb-2 text-muted">Name: <span class="danger"> {{data_info.owner_name}}</span></h6>
+        <p class="card-text">Insurance Upto: <span class="danger">  {{data_info.insurance_upto}}</span></p>
+        <p class="card-text">Fuel Type: <span class="danger"> {{data_info.fuel_type}}</span></p>
+        <p class="card-text">Make: <span class="danger">  {{make[0]}}</span></p>
+        <p class="card-text">Model: <span class="danger"> {{make[1]}}</span></p>
       </div>
     </div>
   </div>
-
+  <span class="danger" *ngIf="mssg">Record not found.</span>
   <button class="btn btn-danger" *ngIf="promptEvent">Install App</button>
 </div>
